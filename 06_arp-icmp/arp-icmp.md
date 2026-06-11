@@ -20,6 +20,8 @@ MAC 주소를 모를 때 사용합니다.
 
 ## ping 동작과 ARP 흐름
 
+![7-Way Handshake](./img/7way-handshake.png)
+
 ```
 1) PC가 같은 대역의 다른 PC로 ping 시도
         ▼
