@@ -31,10 +31,12 @@ MAC 주소를 모를 때 사용합니다.
         ▼
 4) 목적지 PC가 ARP Reply(Unicast)로 자신의 MAC을 알려줌
         ▼
-5) 송신 PC는 ARP Table 갱신 후, Ethernet 헤더에 목적지 MAC을 넣고
-   IP 패킷 안에 ICMP Echo Request를 담아 전송
+5) 송신 PC는 ARP Table 갱신
         ▼
-6) 수신 PC가 ICMP Echo Reply 반환 → ping 응답 완료
+6) Ethernet 헤더에 목적지 MAC을 넣고 ICMP Echo Request를 전송
+        ▼
+7) 수신 PC가 ICMP Echo Reply 반환 → ping 완료
+
 ```
 
 | 메시지 | 설명 |
